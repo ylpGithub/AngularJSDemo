@@ -1,0 +1,22 @@
+<div class="page_2" ng-controller="characterCtrl">
+    <div class="panel-group pull-left" id="accordion">
+        <div class="panel panel-default" ng-repeat="ch in characters">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       ng-href="javascript;#{{ch.charId}}" ng-click="changeText(ch.charContent)">
+                        {{ch.charName}}
+                    </a>
+                </h4>
+            </div>
+            <div id="{{ch.charId}}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>{{ch.charContent}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pull-right text-play">
+       <p>{{textPlay}}</p>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+/*公共样式配置*/
+html,body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;overflow: hidden;height: 100%;}
+h1,h2,h3,h4{padding: 0 0;margin: 3px 10px;}
+ul{margin: 0 0;padding: 0 0;}
+ul li{list-style: none;}
+
+/*页面头部样式*/
+.divBody,.container{padding: 0 0;margin: 0 0;width: 100%;height: 100%;}
+.divBody header{position: fixed;top: 0px;left: 0px;width: 100%;color: #fff;border-bottom: 1px solid #e8e8e8;background-color: rgba(188, 208, 206,0.5);padding: 10px 20px;}
+.logo img{width: 40px;height: 40px;margin-right: 10px;padding: 0 0;}
+.menu{width: auto;}
+.menu-group{width: 250px;}
+.menu-list{width: auto;float: left;margin: 0 15px;cursor: pointer;line-height: 40px;font-family: "Microsoft YaHei" !important;font-size: 16px;}
+ul.menu-group li:hover{transform: rotate(360deg);-webkit-transform: rotate(360deg);transition: 1s;color: #398439;}
+.divBody nav{position: fixed;top: 45%;right: 45px;z-index: 99;}
+
+/*右侧导航条*/
+.left-nav ul li{font-size: 14px;margin-bottom: 30px;height: 12px;}
+.left-nav ul li a span{border-radius: 50%;position: absolute;z-index: 1;height: 8px;width: 8px;border: 0;background: rgba(0,0,0,0.5);-webkit-transition: all 0.1s ease-in-out;
+-moz-transition: all 0.1s ease-in-out;-o-transition: all 0.1s ease-in-out;transition: all 0.1s ease-in-out;}
+.left-nav ul li a span:hover{height: 12px;width: 12px;border-radius: 100%;}
+
+
+/*page1页面样式*/
+.page_1,.page_2,.page_3,.page_4{width: 100%;height: 100%;display: inline-block;padding-top: 67px;}
+.page_1{background: url(../img/back4.jpg) no-repeat;text-align: center;vertical-align: middle;}
+#myCarousel{height: 100%;}
+#myCarousel ol li{margin-left: 30px;border-color: #4cae4c;}
+.intro{border: 2px solid #fff;border-radius: 10px;padding: 15px 20px;height: 360px;background: rgba(255,255,255,0.1);}
+.add-img{width: 140px;height: 180px;background: #ccc url(../img/header.jpg) no-repeat;border-radius: 5px;margin: 95px 0;}
+.loadImg{width: 140px;height: 180px;background: #ccc;border-radius: 5px;margin-left: -16px;}
+.add-img .uploadImage{width:140px; height:180px;left: 0; top: 0px;border:none;position: absolute;overflow: hidden;opacity: 0;filter:alpha(opacity=1);cursor:pointer;}
+.informat{padding: 10px 25px;color: #fff;}
+.contro-btn{position: relative;}
+.contro-btn .btn{width: 120px;height: 30px;margin: 10px 15px;background: #357ebd;border: 1px solid #285e8e;}
+.contro-btn .btn:hover,.contro-btn .btn:focus{color: #fff;}
+.informat table tr td{border: none;width: 50%;line-height: 20px;padding: 6px 5px;}
+.contro-btn .fileImage{width:120px; height:30px;left: 70px; top: 10px;border:none;position: absolute;overflow: hidden;opacity: 0;filter:alpha(opacity=0);cursor:pointer;}
+.infoms{line-height: 40px;}
+.infoms select,.infoms input,.infoms textarea{padding-left: 10px;margin-bottom: 10px;}
+.infoms textarea{height: 80px;resize:none;}
+.infoms .btn{background: #357ebd;width: 180px;color: #fff;}
+
+/*page2页面样式*/
+.page_2{background: url(../img/back2.jpg) no-repeat;padding-top: 12%;}
+.panel-group{width:30%;margin-left: 15%;padding-top: 60px;}
+.text-play{width: 30%;margin-right: 15%;min-height: 400px;border: 2px solid #000;background: #fff;border-radius: 10px;}
+.panel-title a{width: 100%;}
+.panel-title a:hover,.panel-title a:focus{text-decoration: none;color: #398439}
+.text-play{vertical-align: middle;font-size: 18px;line-height: 40px;}
+.panel-body p,.text-play p{line-height: 30px;text-indent:2em;padding: 10px 15px;}
+
+/*page3页面样式*/
+.page_3{background: url(../img/back3.jpg) no-repeat;padding-top: 67px;height: 100%;padding-bottom: 0;overflow: auto;}
+.make-up{background: rgba(255,255,255,0.3);box-shadow: #fff 1px 1px 1px 1px;height: 100%;}
+.page-content{margin-bottom: 10px;}
+.page-content ul li{border-bottom: 1px solid #ccc;padding: 15px 15px;line-height: 30px;}
+.page-content ul li p{text-indent:2em;}
+
+/*page4页面样式*/
+.page_4{background: url(../img/back1.jpg) no-repeat;padding-top: 100px;}
+.apply{width: 88%;margin: 0 auto; transition: all 700ms ease; transform: translate3d(0px, 0px, 0px);}
+.apple-img{display: table-cell;vertical-align: middle;width: 100%;}
+.apple-img img{width: 480px;height: 230px;position: absolute;transform: scale(1);transition: 1s all;box-shadow: 10px 10px 10px rgba(0,0,0,.3);border-radius: 8px;}
+.apple-img img:hover{width: 600px;height: 280px;z-index: 99;margin-left: -60px;}
+.apple-img .pic1 {top: 20px;left: 0px;}
+.apple-img .pic2 {top: 140px;left: 90px;}
+.apple-img .pic3 {top: 260px;left: 180px;}
+.apple-list ul{margin: 10px 30px;}
+.apple-list ul li{line-height: 37px;list-style: circle;font-size: 18px;margin-bottom: 8px;}
+.apple-list ul li:hover,.apple-list ul li:focus{border: 2px solid #000;border-radius: 5px;box-shadow: #000 2px 2px;}

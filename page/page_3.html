@@ -1,0 +1,29 @@
+<div class="page_3" ng-controller="makeUpCtrl">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8 make-up">
+        <div class="page-content">
+            <ul>
+                <li  ng-repeat="list in lists" ng-switch="{{list.types}}">
+                    <div ng-switch-when="1">
+                        <h3>{{list.title}}</h3>
+                        <div class="text-center" style="margin-top: 20px;">
+                            <img ng-src="{{list.content}}" height="150px">
+                        </div>
+                    </div>
+                    <div ng-switch-when="2">
+                        <h3>{{list.title}}</h3>
+                        <p>{{list.content}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="page-nav text-center" ng-show="more">
+            <ul class="pagination pagination-lg">
+                <li><a ng-click="prePage()">&laquo;</a></li>
+                <li ng-repeat="pa in pages"><a ng-click="changePage(pa.pageNum)">{{pa.pageNum}}</a></li>
+                <li><a ng-click="nextPage()">&raquo;</a></li>
+            </ul><br>
+        </div>
+    </div>
+    <div class="col-xs-2"></div>
+</div>
